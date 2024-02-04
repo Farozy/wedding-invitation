@@ -6,7 +6,7 @@ export const Female = 'Ukhty';
 export const MaleParent = 'Bapak Fulan & Ibu Fulan';
 export const FemaleParent = 'Bapak Fulan & Ibu Fulan';
 
-export const DateTime = '2024-02-04 00:05:00';
+export const DateTime = '2024-04-11 10:00:00';
 
 export const Akad = "07.00";
 export const Resepsi = "12.00";
