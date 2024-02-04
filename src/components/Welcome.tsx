@@ -44,9 +44,6 @@ export default function Welcome() {
 
     const doFormSubmit = async (values: any) => {
         const response = await AxiosGet("get", API_CONTACT, values.tamu);
-        
-        console.log(response);
-        console.log(values.tamu);
 
         if(response.code === undefined) {
             setIsTamu(response.name);
