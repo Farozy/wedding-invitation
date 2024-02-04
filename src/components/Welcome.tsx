@@ -24,6 +24,7 @@ export default function Welcome() {
     const [isContact, setIsContact] = useState();
     const audioElement: any = document.getElementById('myAudio');
     const {setId, setPhone, setName} = useGlobalContext();
+    
     const open = async () => {
         const body = document.querySelector('body');
         body!.style.overflowY = 'scroll';
@@ -43,6 +44,9 @@ export default function Welcome() {
 
     const doFormSubmit = async (values: any) => {
         const response = await AxiosGet("get", API_CONTACT, values.tamu);
+        
+        console.log(response);
+        console.log(values.tamu);
 
         if(response.code === undefined) {
             setIsTamu(response.name);
@@ -127,7 +131,7 @@ export default function Welcome() {
                                             className="block py-2.5 pr-7 pl-2 z-20 text-sm rounded-e-lg rounded-s-gray-100 rounded-s-2 border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:border-blue-500"
                                         />
                                         <button
-                                            type="submit" disabled={formik.isSubmitting}
+                                            type="submit"
                                             className="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white rounded-e-xl border border-green-600 focus:ring-2 focus:outline-none bg-[#4DC247] hover:bg-green-500 focus:ring-green-500"
                                         >
                                             <HiPaperAirplane className="rotate-90"/>
