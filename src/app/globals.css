@@ -10,253 +10,266 @@
 @tailwind utilities; */
 
 html {
-  scroll-behavior: smooth !important;
-  --scrollbarBG: #cfd8dc;
-  --thumbBG: #90a4ae;
+    scroll-behavior: smooth !important;
+    --scrollbarBG: #cfd8dc;
+    --thumbBG: #90a4ae;
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif !important;
-  padding: 0 !important;
-  -ms-overflow-style: none !important;
-  scrollbar-width: none !important;
-  background-color: #212529;
+    font-family: "Josefin Sans", sans-serif !important;
+    padding: 0 !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+    background-color: #212529;
 }
 
 body::-webkit-scrollbar {
-  display: none !important;
+    display: none !important;
+}
+
+.active {
+    color: rgb(37, 99, 235);
+    padding-bottom: 3px;
+    border-bottom: solid 2px #F28123;
+    transform: scaleX(0);
+    transition: transform 500s ease-in-out;
 }
 
 .font-esthetic {
-  font-family: "Sacramento", cursive !important;
-  color: #ffffff !important;
+    font-family: "Sacramento", cursive !important;
+    color: #ffffff !important;
 }
 
 .font-arabic {
-  font-family: "Noto Naskh Arabic", serif !important;
-  color: #ffffff !important;
+    font-family: "Noto Naskh Arabic", serif !important;
+    color: #ffffff !important;
 }
 
 .whatsapp-ico {
-  fill: white;
-  width: 30px;
-  height: 30px;
-  background-color: #4dc247;
-  border-radius: 50%;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    fill: white;
+    width: 30px;
+    height: 30px;
+    background-color: #4dc247;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .whatsapp-ico:hover {
-  box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
 }
 
 .img-crop {
-  width: 14rem;
-  height: 14rem;
-  position: relative;
-  /*overflow: hidden;*/
-  /*border-radius: 50%;*/
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    /*overflow: hidden;*/
+    /*border-radius: 50%;*/
 }
 
 .img-crop > img {
-  display: inline;
-  margin: 0 auto;
-  height: auto;
-  width: 100%;
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
 }
 
 .btn-music {
-  position: fixed;
-  bottom: 9vh !important;
-  right: 2vh !important;
-  z-index: 1055 !important;
+    position: fixed;
+    bottom: 9vh !important;
+    right: 2vh !important;
+    z-index: 1055 !important;
 }
 
 .spin-icon {
-  animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .loading-page {
-  position: fixed;
-  inset: 0 !important;
-  width: 100%;
-  height: 100%;
-  background-color: #111111;
-  z-index: 1056 !important;
+    position: fixed;
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    z-index: 1056 !important;
 }
 
 .card-body {
-  overflow-wrap: break-word !important;
+    overflow-wrap: break-word !important;
 }
 
 .mouse-animation {
-  padding: 0.25rem 0.625rem;
-  height: 2rem;
-  border: 0.1rem solid #ffffff;
-  border-radius: 1.4rem;
-  opacity: 0.75;
-  box-sizing: content-box;
+    padding: 0.25rem 0.625rem;
+    height: 2rem;
+    border: 0.1rem solid #ffffff;
+    border-radius: 1.4rem;
+    opacity: 0.75;
+    box-sizing: content-box;
 }
 
 @keyframes scroll {
-  0% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
 
-  10% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
-  100% {
-    transform: translateY(1rem);
-    opacity: 0;
-  }
+    100% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
 }
 
 .mouse-animation > .scroll-animation {
-  width: 0.25rem;
-  height: 0.625rem;
-  border-radius: 25%;
-  background-color: #ffffff;
-  animation-name: scroll;
-  animation-duration: 2.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+    width: 0.25rem;
+    height: 0.625rem;
+    border-radius: 25%;
+    background-color: #ffffff;
+    animation-name: scroll;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 @keyframes spin-icon {
-  from {
-    transform: rotate(0deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
 
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .spin-button {
-  animation: spin-icon 5s linear infinite;
+    animation: spin-icon 5s linear infinite;
 }
 
 @keyframes love {
-  50% {
-    transform: translateY(1rem);
-  }
+    50% {
+        transform: translateY(1rem);
+    }
 }
 
 .animate-love {
-  animation: love 5s ease-in-out infinite;
+    animation: love 5s ease-in-out infinite;
 }
 
 .dark-section {
-  background-color: #111111 !important;
-  margin-top: -0.5rem;
-  margin-bottom: -0.5rem;
+    background-color: #111111 !important;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
 }
 
 footer {
-  background-color: #111111 !important;
-  margin-top: -0.5rem;
-  padding-bottom: 5rem;
+    background-color: #111111 !important;
+    margin-top: -0.5rem;
+    padding-bottom: 5rem;
 }
 
 /* Scroll */
 .scrollComment {
-  scrollbar-width: thin;
-  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
+    background: #888;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
 
 /* Loader */
 
 .loader {
-  background-color: #000918;
-  color: hsl(223, 90%, 5%);
-  font: 1em/1.5 sans-serif;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  transition: background-color 0.3s;
+    background-color: #000918;
+    color: hsl(223, 90%, 5%);
+    font: 1em/1.5 sans-serif;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    transition: background-color 0.3s;
 }
 
 .ip {
-  width: 16em;
-  height: 8em;
+    width: 16em;
+    height: 8em;
 }
+
 .ip__track {
-  stroke: hsl(223, 90%, 90%);
-  transition: stroke 0.3s;
+    stroke: hsl(223, 90%, 90%);
+    transition: stroke 0.3s;
 }
+
 .ip__worm1,
 .ip__worm2 {
-  animation: worm1 2s linear infinite;
+    animation: worm1 2s linear infinite;
 }
+
 .ip__worm2 {
-  animation-name: worm2;
+    animation-name: worm2;
 }
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: hsl(223, 90%, 5%);
-    --fg: hsl(223, 90%, 95%);
-  }
-  .ip__track {
-    stroke: hsl(223, 90%, 15%);
-  }
+    :root {
+        --bg: hsl(223, 90%, 5%);
+        --fg: hsl(223, 90%, 95%);
+    }
+
+    .ip__track {
+        stroke: hsl(223, 90%, 15%);
+    }
 }
 
 /* Animation */
 @keyframes worm1 {
-  from {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    animation-timing-function: steps(1);
-    stroke-dashoffset: -358;
-  }
-  50.01% {
-    animation-timing-function: linear;
-    stroke-dashoffset: 358;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+    from {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        animation-timing-function: steps(1);
+        stroke-dashoffset: -358;
+    }
+    50.01% {
+        animation-timing-function: linear;
+        stroke-dashoffset: 358;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
+
 @keyframes worm2 {
-  from {
-    stroke-dashoffset: 358;
-  }
-  50% {
-    stroke-dashoffset: 0;
-  }
-  to {
-    stroke-dashoffset: -358;
-  }
+    from {
+        stroke-dashoffset: 358;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: -358;
+    }
 }

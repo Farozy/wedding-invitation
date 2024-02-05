@@ -83,7 +83,7 @@ export default function Welcome() {
 
     return (
         <div className="loading-page opacity-100" id="welcome" style={ { opacity: '1' } }>
-            <div className="flex justify-center items-center h-screen" data-aos="zoom-in">
+            <div className="flex justify-center items-center min-h-screen" data-aos="zoom-in">
                 <div className="text-center">
                     <h1 className="font-esthetic mb-4 text-[2.5rem]">
                         The Wedding Of

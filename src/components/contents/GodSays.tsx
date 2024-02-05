@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function GodSays() {
     return (
-        <section className="w-full lg:w-3/4 mx-auto">
+        <section className="w-full lg:w-3/4 mx-auto" id="godsay">
             <div className="container mx-auto">
                 <div className="text-center" data-aos="fade-up" data-aos-duration="2000">
                     <h1 className="font-esthetic mt-0 mb-3 text-[2rem]">
