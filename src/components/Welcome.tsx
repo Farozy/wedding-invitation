@@ -5,7 +5,6 @@ import { FaEnvelopeOpen } from "react-icons/fa6";
 import { confetti } from 'tsparticles-confetti';
 import { Opacity, animate } from "@/utils/Animation";
 import 'aos/dist/aos.css';
-import AOS from 'aos';
 import { HiPaperAirplane } from "react-icons/hi";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -29,7 +28,6 @@ export default function Welcome() {
     const open = async () => {
         const body = document.querySelector('body');
         body!.style.overflowY = 'scroll';
-        AOS.init();
 
         Opacity("welcome");
 
@@ -85,7 +83,7 @@ export default function Welcome() {
 
     return (
         <div className="loading-page opacity-100" id="welcome" style={ { opacity: '1' } }>
-            <div className="flex justify-center items-center h-screen">
+            <div className="flex justify-center items-center h-screen" data-aos="zoom-in">
                 <div className="text-center">
                     <h1 className="font-esthetic mb-4 text-[2.5rem]">
                         The Wedding Of
