@@ -133,7 +133,7 @@ export default function Welcome() {
                                         { !isLoading ?
                                             <button
                                                 type="submit"
-                                                className="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white rounded-e-xl border border-green-600 focus:ring-1 focus:outline-none bg-[#4DC247] hover:bg-green-500 focus:ring-green-500"
+                                                className="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white rounded-e-lg border border-green-600 focus:ring-1 focus:outline-none bg-[#4DC247] hover:bg-green-500 focus:ring-green-500"
                                             >
                                                 <HiPaperAirplane className="rotate-90" />
                                             </button>
