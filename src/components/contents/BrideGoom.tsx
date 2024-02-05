@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import {Female, FemaleParent, Male, MaleParent} from "@/config/Profiles";
+import GodSays from "./GodSays";
+import { WaveSeparatorDown } from "@/utils/Icons";
 
 export default function BrideGoom() {
     return (
@@ -86,6 +88,8 @@ export default function BrideGoom() {
                     </div>
                 </div>
             </div>
+            <WaveSeparatorDown/>
+            <GodSays/>
         </section>
     );
 }
