@@ -90,9 +90,9 @@ export default function Welcome() {
                     <h1 className="font-esthetic mb-4 text-[2.5rem]">
                         The Wedding Of
                     </h1>
-                    <div className="img-crop border-2 border-white shadow mb-4 mx-auto rounded-full">
+                    <div className="img-crop shadow mb-4 mx-auto rounded-full">
                         <Image
-                            src="/assets/images/bg.jpeg" alt="bg" width={ 1000 } height={ 1000 }
+                            src="/assets/images/bg1.jpg" alt="bg" width={ 1000 } height={ 1000 }
                             priority className="rounded-full"
                         />
                     </div>

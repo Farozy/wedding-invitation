@@ -12,7 +12,7 @@ export default function Home() {
                 <h1 className="font-esthetic my-4 text-[2.5rem]">Undangan Pernikahan</h1>
                 <div className="py-4">
                     <div className="img-crop border-2 border-light shadow mx-auto rounded-full">
-                        <Image src="/assets/images/bg3.png" alt="bg" width={1000} height={1000} priority className="rounded-full"/>
+                        <Image src="/assets/images/bg2.jpg" alt="bg" width={1000} height={1000} priority className="rounded-full"/>
                     </div>
                 </div>
                 <h1 className="font-esthetic my-4 text-[3rem]">{`${Male} & ${Female}`}</h1>
