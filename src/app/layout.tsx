@@ -9,18 +9,18 @@ const inter = Inter({subsets: ['latin']})
 
 export const metadata: Metadata = {
     title: 'Undangan Pernikahan',
-    description: 'undangan elektronik untuk pernikahan',
+    description: 'Kami mengundang sahabat dan keluarga untuk hadir dan memberikan doa restu dalam pernikahan kami yang akan diselenggarakan pada hari Senin, 11 April 2024.',
     icons: {
         icon: [
             {
                 media: '(prefers-color-scheme: light)',
-                url: '/faviconn.png',
-                href: '/faviconn.png',
+                url: '/favicon2.png',
+                href: '/favicon2.png',
             },
             {
                 media: '(prefers-color-scheme: dark)',
-                url: '/faviconn.png',
-                href: '/faviconn.png',
+                url: '/favicon2.png',
+                href: '/favicon2.png',
             },
         ]
     }
