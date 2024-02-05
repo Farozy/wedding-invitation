@@ -56,8 +56,10 @@ export default function Welcome() {
             setPhone(response.phone);
             setName(response.name);
         } else {
-            setIsloading(false);
-            await Toast('error', "Nomer WA tidak dikenali", 'top-center', '❌');
+            setTimeout(async () => {
+                setIsloading(false);
+                await Toast('error', "Nomer WA tidak dikenali", 'top-center', '❌');
+            }, 2000)
         }
 
         setTimeout(() => {
