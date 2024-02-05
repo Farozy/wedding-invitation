@@ -9,20 +9,20 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Undangan Pernikahan',
   description: 'undangan elektronik untuk pernikahan',
-  icons: {
-    icon: [
-      {
-        media: '(prefers-color-scheme: light)',
-        url: '/favicon.png',
-        href: '/favicon.png',
-      },
-      {
-        media: '(prefers-color-scheme: dark)',
-        url: '/favicon.png',
-        href: '/favicon.png',
-      },
-    ]
-  }
+  // icons: {
+  //   icon: [
+  //     {
+  //       media: '(prefers-color-scheme: light)',
+  //       url: '/favicon.png',
+  //       href: '/favicon.png',
+  //     },
+  //     {
+  //       media: '(prefers-color-scheme: dark)',
+  //       url: '/favicon.png',
+  //       href: '/favicon.png',
+  //     },
+  //   ]
+  // }
 }
 
 export default function RootLayout({
